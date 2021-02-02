@@ -45,7 +45,7 @@
 <body>
     
     <script>
-        let menupos = 'top'
+        let menupos = 'left'
     </script>
     
     
@@ -87,104 +87,119 @@
         </div>
     </div>
     
-    
-    <nav class="navbar navbar-inverse navbar-fixed-top navbartop">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a data-pjax class="navbar-brand" href="https://charlielyo.github.io"
-                    style="font-size:21px">Charlie&#39;s Blog&nbsp;&nbsp;|&nbsp;&nbsp;</a>
-                <a class="navbar-brand" href=""
-                    style="font-size:15px;font-family:kaiti">写字楼里写字间 
+    <div id=side>
+        <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                    src='https://charlielyo.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
+        <div class="avatar-border">
+            <img src="https://charlielyo.github.io/images/avatar.png?v=1612260965999" class="avatar">
+        </div>
+        <div class="sitename">Charlie&#39;s Blog</div>
+        <span class="describtion" data-text='["写字楼里写字间 
 写字间里程序员
 程序员来写程序
-又拿程序换药钱</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse">
-                
-                <div class="search nav navbar-nav" style="margin-top:8px">
-                    <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
-                    <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
-                    <div class="search-results"></div>
-                </div>
-                
-                <div class="search nav navbar-nav searchtop">
-                <a title="text" onclick="document.getElementById('socialMenu').style.display='block'"><i><img class="social"
-                    src="https://charlielyo.github.io/media/images/social.png" alt=""></i></a>
-                <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
-                            src='https://charlielyo.github.io/media/images/music.png' alt="音乐播放器"
-                            class="musicbtn musictop"></i></a>
-            </div>
-            <ul class="nav navbar-nav" style="float: right;margin-right:5%">
-                
-                
-                <li>
-                    <a data-pjax href="/" style="color:white">
-                        首页
-                    </a>
-                </li>
-                
-                
-                
-                <li>
-                    <a data-pjax href="/archives" style="color:white">
-                        归档
-                    </a>
-                </li>
-                
-                
-                
-                <li>
-                    <a data-pjax href="/tags" style="color:white">
-                        标签
-                    </a>
-                </li>
-                
-                
-                
-                <li>
-                    <a data-pjax href="/post/about" style="color:white">
-                        关于
-                    </a>
-                </li>
-                
-                
-                
-                
-                <li><a data-pjax href="https://charlielyo.github.io/friends" style="color:white">友链</a></li>
-                
-                  <li><img src="https://charlielyo.github.io/images/avatar.png?v=1612260054466" alt=""
-                class="menutopavatar"></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    <div id="socialMenu">
-        <div class="animate">
-            <div class="socialContainer">
-                
-                
-                
-                
-                
-                
-            </div>
-            <div id="qq" style="display:none"></div>
+又拿程序换药钱"]'>&nbsp;</span>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
         </div>
+        
+    <div class="share-button">
+        <span>社交按钮</span>
+        
+        
+        
+        
+        
+        
     </div>
-    <!-- 引入jQuery核心js文件 -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script>
-        var social = document.getElementById('socialMenu');
-        // 鼠标点击模型外区域关闭登录框
-        window.onclick = function (event) {
-            if (event.target == social) {
-                social.style.display = "none";
-            }
+    <div id="qq" style="display:none"></div>
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="/" class="menubutton">
+            首页
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="/archives" class="menubutton">
+            归档
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="/tags" class="menubutton">
+            标签
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="/post/about" class="menubutton">
+            关于
+        </a>
+    </div>
+    
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://charlielyo.github.io/friends" class="menubutton">友人帐</a>
+    </div>
+    
+    <hr>
+    <style>
+    .copyright {
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        .foot {
+            width: 100%;
+            height: 130px;
         }
-    </script>
+    }
+
+    @media screen and (max-width: 1200px) {
+        .foot {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="foot">
+        <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+    </div>
+
+
+    <script src="https://charlielyo.github.io/media/js/wordshow.js"></script>
+    
     
 </body>
 <script>
@@ -384,7 +399,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260054466">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260965999">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -397,7 +412,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260054466">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260965999">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -880,8 +895,16 @@
                     <div style="margin-top:60px"></div>
                 </div>
                 
-                <div class="col-lg-3"></div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12  col-lg-6 top" style="z-index: 11;">
+                    <div id="tab1" class="tab">
+                        <div class="bars">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="close"></div>
+                    </div>
+                <div class="col-md-1 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="z-index: 11;">
                     <div id="talks">
     <div id="talkContainer">
     </div>
@@ -891,52 +914,8 @@
 <div id="myModal" class="modal">
     <img class="modal-content" id="img01">
 </div>
-                    <div style="display: none;">
-                        
-                            <style>
-    .copyright {
-        font-size: 15px;
-        color: #d9d9d9;
-    }
-
-
-    @media screen and (min-width: 1200px) {
-        .foot {
-            width: 100%;
-            height: 130px;
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        .foot {
-            display: none;
-        }
-    }
-</style>
-
-<body>
-    <div class="foot">
-        <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
-                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
-            <div>
-                
-            </div>
-            <div>
-                
-            </div>
-            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
-            </div>
-        </div>
-
-
-
-    </div>
-</body>
-
-                            
-                    </div>
                 </div>
-                <div class="col-md-1 col-lg-1"></div>
+                <div class="col-md-1 col-lg-2"></div>
                 
             </div>
             
@@ -1009,7 +988,7 @@
         <div id="bgchoice" style="display: none">default
             </div>
             
-            <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpeg</div>
+            <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpg</div>
                
     </div>
     
@@ -1041,6 +1020,8 @@
                 bgurl = bgurl.replace("\\", "/");
         bg.css("background", "url('" + bgurl + "')");
 </script>
+
+        <script src="https://charlielyo.github.io/media/js/index.js"></script>
 
 
 <script>
@@ -1084,7 +1065,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260054466">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260965999">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -1097,7 +1078,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260054466">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612260965999">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
