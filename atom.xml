@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://charlielyo.github.io</id>
     <title>Charlie Lyo&apos;s Blog</title>
-    <updated>2021-02-02T05:41:12.466Z</updated>
+    <updated>2021-02-02T06:15:20.860Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://charlielyo.github.io"/>
     <link rel="self" href="https://charlielyo.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://charlielyo.github.io/images/avatar.png</logo>
     <icon>https://charlielyo.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Charlie Lyo&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[测试]]></title>
+        <id>https://charlielyo.github.io/post/ce-shi/</id>
+        <link href="https://charlielyo.github.io/post/ce-shi/">
+        </link>
+        <updated>2021-02-02T06:15:02.000Z</updated>
+        <content type="html"><![CDATA[<p>这是一个测试。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://charlielyo.github.io/post/hello-gridea/</id>
