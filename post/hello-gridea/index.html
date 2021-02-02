@@ -28,13 +28,12 @@ Gridea 主页
     
     <style>
         .markdownIt-TOC {
-            margin-left: 28%;
             padding-left: 2px;
-            width: 80%;
+            width: 100%;
         }
 
         .markdownIt-TOC li {
-            padding-left: 8%;
+            padding-left: 2%;
         }
     </style>
     
@@ -211,7 +210,7 @@ Gridea 主页
 <body>
     
     <script>
-        let menupos = 'left'
+        let menupos = 'top'
     </script>
     
     
@@ -233,7 +232,7 @@ Gridea 主页
     <div id="side-posttitle" style="display: none;">
         
     
-    测试
+    晚安，月亮
     <script>postsnum += 1</script>
     
     
@@ -253,129 +252,112 @@ Gridea 主页
         </div>
     </div>
     
-    <div id=side>
-        <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
-                    src='https://charlielyo.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
-        <div class="avatar-border">
-            <img src="https://charlielyo.github.io/images/avatar.png?v=1612273590360" class="avatar">
-        </div>
-        <div class="sitename">Charlie&#39;s Blog</div>
-        <span class="describtion" data-text='["Something Just Like This"]'>&nbsp;</span>
-        
-        <div class="search">
-            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
-            <input type="text" class="search-input" placeholder="搜索标题关键字">
-            <div class="search-results"></div>
-        </div>
-        
-    <div class="share-button">
-        <span>社交按钮</span>
-        
-        <a href="https://github.com/Charlielyo/" target="_blank"><i style="font-size: 20px;"><img class="icon"
-                    src="https://charlielyo.github.io/media/images/github.png" alt=""></i></a>
-        
-        
-        <a onclick="showqq()"><i style="font-size: 20px;"><img class="icon"
-                    src="https://charlielyo.github.io/media/images/QQ.png" alt=""></i></a>
-        
-        
-        
-        <a href="https://space.bilibili.com/237566428" target="_blank"><i style="font-size: 20px;"><img class="icon"
-                    src="https://charlielyo.github.io/media/images/bilibili.png" alt=""></i></a>
-        
-        
-        
-    </div>
-    <div id="qq" style="display:none">1069468778</div>
     
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="/" class="menubutton">
-            首页
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="/archives" class="menubutton">
-            归档
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="/tags" class="menubutton">
-            标签
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="/post/about" class="menubutton">
-            关于
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="https://charlielyo.github.io/talk" class="menubutton">说说</a>
-    </div>
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="https://charlielyo.github.io/friends" class="menubutton">友人帐</a>
-    </div>
-    
-    <hr>
-    <style>
-    .copyright {
-        font-size: 15px;
-        color: #d9d9d9;
-    }
+    <nav class="navbar navbar-inverse navbar-fixed-top navbartop">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a data-pjax class="navbar-brand" href="https://charlielyo.github.io"
+                    style="font-size:21px">Charlie&#39;s Blog&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                <a class="navbar-brand" href=""
+                    style="font-size:15px;font-family:kaiti">Something Just Like This</a>
+            </div>
 
-
-    @media screen and (min-width: 1200px) {
-        .foot {
-            width: 100%;
-            height: 130px;
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        .foot {
-            display: none;
-        }
-    }
-</style>
-
-<body>
-    <div class="foot">
-        <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
-                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
-            <div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                
+                <div class="search nav navbar-nav" style="margin-top:8px">
+                    <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+                    <input type="text" class="search-input" placeholder="搜索标题关键字">
+                    <div class="search-results"></div>
+                </div>
+                
+                <div class="search nav navbar-nav searchtop">
+                <a title="text" onclick="document.getElementById('socialMenu').style.display='block'"><i><img class="social"
+                    src="https://charlielyo.github.io/media/images/social.png" alt=""></i></a>
+                <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                            src='https://charlielyo.github.io/media/images/music.png' alt="音乐播放器"
+                            class="musicbtn musictop"></i></a>
+            </div>
+            <ul class="nav navbar-nav" style="float: right;margin-right:5%">
+                
+                
+                <li>
+                    <a data-pjax href="/" style="color:white">
+                        首页
+                    </a>
+                </li>
+                
+                
+                
+                <li>
+                    <a data-pjax href="/archives" style="color:white">
+                        归档
+                    </a>
+                </li>
+                
+                
+                
+                <li>
+                    <a data-pjax href="/tags" style="color:white">
+                        标签
+                    </a>
+                </li>
+                
+                
+                
+                <li>
+                    <a data-pjax href="/post/about" style="color:white">
+                        关于
+                    </a>
+                </li>
+                
+                
+                
+                <li><a data-pjax href="https://charlielyo.github.io/talk" style="color:white;">说说</a></li>
+                
+                
+                <li><a data-pjax href="https://charlielyo.github.io/friends" style="color:white">友链</a></li>
+                
+                  <li><img src="https://charlielyo.github.io/images/avatar.png?v=1612274750086" alt=""
+                class="menutopavatar"></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div id="socialMenu">
+        <div class="animate">
+            <div class="socialContainer">
+                
+                <a href="https://github.com/Charlielyo/" target="_blank"><i style="font-size: 40px;"><img
+                            class="icon " src="https://charlielyo.github.io/media/images/github.png" alt=""></i></a>
+                
+                
+                <a onclick="showqq()" style="cursor:pointer"><i style="font-size: 40px;"><img class="icon"
+                            src="https://charlielyo.github.io/media/images/QQ.png" alt=""></i></a>
+                
+                
+                
+                <a href="https://space.bilibili.com/237566428" target="_blank"><i style="font-size: 40px;"><img
+                            class="icon" src="https://charlielyo.github.io/media/images/bilibili.png" alt=""></i></a>
+                
+                
                 
             </div>
-            <div>
-                
-            </div>
-            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
-            </div>
+            <div id="qq" style="display:none">1069468778</div>
         </div>
-
-
-
     </div>
-</body>
-
-    </div>
-
-
-    <script src="https://charlielyo.github.io/media/js/wordshow.js"></script>
-    
+    <!-- 引入jQuery核心js文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script>
+        var social = document.getElementById('socialMenu');
+        // 鼠标点击模型外区域关闭登录框
+        window.onclick = function (event) {
+            if (event.target == social) {
+                social.style.display = "none";
+            }
+        }
+    </script>
     
 </body>
 <script>
@@ -575,7 +557,7 @@ Gridea 主页
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612273590360">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612274750086">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -588,7 +570,7 @@ Gridea 主页
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612273590360">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612274750086">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -937,17 +919,9 @@ Gridea 主页
     </script>
     </div>
                 
-                <div id="tab1" class="tab">
-                    <div class="bars">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="close"></div>
-                </div>
-                <div class="col-md-1 col-lg-3"></div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-                    <link rel="stylesheet" href="https://charlielyo.github.io/media/css/font-awesome.css">
+            <div class="col-lg-3"></div>
+            <div id="main" class="col-xs-12 col-sm-12 col-md-12  col-lg-6 posttop">
+                <link rel="stylesheet" href="https://charlielyo.github.io/media/css/font-awesome.css">
 
 <body>
     <div class="allcontent" id="postdetail">
@@ -1048,13 +1022,13 @@ Gridea 主页
             <a  data-pjax class="prev-post-pc" href="https://charlielyo.github.io/post/ce-shi/"  style="color: black;">
                 <div id="ppcontainer">
                     
-                    <img src="https://charlielyo.github.io/post-images/ce-shi.jpeg" style="width: 100%;" class="opimg">
+                    <img src="https://charlielyo.github.io/post-images/ce-shi.jpg" style="width: 100%;" class="opimg">
                     
-                    <h4 class="optitle">测试</h4>
+                    <h4 class="optitle">晚安，月亮</h4>
                 </div>
             </a>
             <div class="prev-post">
-                上一篇 <a  data-pjax href="https://charlielyo.github.io/post/ce-shi/">测试</a>
+                上一篇 <a  data-pjax href="https://charlielyo.github.io/post/ce-shi/">晚安，月亮</a>
             </div>
             
             
@@ -1074,8 +1048,8 @@ Gridea 主页
     pl = pl.replace(rootaddr, "");
     $("#hotnum").attr('id', pl);
 </script>
-                    <div class="toc-container">
-                        <ul class="markdownIt-TOC">
+                <div class="toc-container">
+                    <ul class="markdownIt-TOC">
 <li>
 <ul>
 <li><a href="#%E7%89%B9%E6%80%A7">特性👇</a></li>
@@ -1083,19 +1057,19 @@ Gridea 主页
 </li>
 </ul>
 
-                    </div>
-                    <div class="tog">
-                        <div class="toggleContainer">
-                            <div class="toggle">
-                                <i class="fas fa-angle-double-up"></i>
-                            </div>
+                </div>
+                <div class="tog">
+                    <div class="toggleContainer">
+                        <div class="toggle">
+                            <i class="fas fa-angle-double-up"></i>
                         </div>
                     </div>
-                    <div id="comment" class="comment" style="background: white">
-                        <div class="commentcontainer">
-                            
-                            
-                            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                </div>
+                <div id="comment" class="comment" style="background: white">
+                    <div class="commentcontainer">
+                        
+                        
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -1116,17 +1090,62 @@ Gridea 主页
 
 </script>
 
-                            
-                            
-                            
-                        </div>
+                        
+                        
+                        
                     </div>
                 </div>
-                <div class="col-md-1 col-lg-2"></div>
-                <div id="bg">
+                <div style="margin-top:5vh">
+                    
+                        <style>
+    .copyright {
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        .foot {
+            width: 100%;
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .foot {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="foot">
+        <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+                        
                 </div>
             </div>
-            
+            <div class="col-md-2 col-lg-3">
+            </div>
+            <div id="bg">
+            </div>
+        </div>
+        
         
     </div>
     
@@ -1243,8 +1262,6 @@ Gridea 主页
 </script>
 
 
-<script src="https://charlielyo.github.io/media/js/index.js"></script>
-
 
 
 <!-- 动态更改上(下)一篇博客图片框长宽 -->
@@ -1261,8 +1278,8 @@ Gridea 主页
 <script src="https://charlielyo.github.io/media/share/dist/Share.js"></script>
 
 <script>
-    var avatarSrc = $(".avatar").attr("src");
-    var dp = document.getElementsByClassName("describtion")[0].innerHTML;
+    var avatarSrc = $(".menutopavatar").attr("src");
+    var dp = document.getElementsByClassName("navbar-brand")[1].innerHTML;
 </script>
 
 
