@@ -11,10 +11,7 @@
     <!-- pjax 加载valine文件 -->
     <script src="https://charlielyo.github.io/media/js/valine.min.js"></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-    <meta name="description" content="写字楼里写字间 
-写字间里程序员
-程序员来写程序
-又拿程序换药钱" />
+    <meta name="description" content="Something Just Like This" />
     <meta http-equiv="x-pjax-version" content="v123">
     <title>Charlie's Blog</title>
 </head>
@@ -97,13 +94,10 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://charlielyo.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://charlielyo.github.io/images/avatar.png?v=1612261077213" class="avatar">
+            <img src="https://charlielyo.github.io/images/avatar.png?v=1612261156030" class="avatar">
         </div>
         <div class="sitename">Charlie&#39;s Blog</div>
-        <span class="describtion" data-text='["写字楼里写字间 
-写字间里程序员
-程序员来写程序
-又拿程序换药钱"]'>&nbsp;</span>
+        <span class="describtion" data-text='["Something Just Like This"]'>&nbsp;</span>
         
         <div class="search">
             <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
@@ -405,7 +399,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612261077213">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612261156030">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -418,7 +412,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612261077213">\
+                        <img class="intro1" src="https://charlielyo.github.io/images/avatar.png?v=1612261156030">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -914,7 +908,7 @@
                         <!-- 移动端欢迎页 -->
 <div class="welcome">
     <div class="avatar-border">
-        <img src="https://charlielyo.github.io/images/avatar.png?v=1612261077213" class="avatar">
+        <img src="https://charlielyo.github.io/images/avatar.png?v=1612261156030" class="avatar">
     </div>
     <span class="mobiledescribtion"></span>
 </div>
@@ -928,10 +922,7 @@
         bgurl = bgurl.replace("\\", "/");
     welcome.css("background", "url('" + bgurl + "')");
     var mobiledes = document.querySelector(".mobiledescribtion");
-    var text = "写字楼里写字间 
-写字间里程序员
-程序员来写程序
-又拿程序换药钱";
+    var text = "Something Just Like This";
     // 当前显示第几个字
     var mobilecharIndex = 1;
     // 每个字显示间隔默认是500毫秒
