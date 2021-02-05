@@ -2,14 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+    <meta name="description" content="Linux，全称GNU/Linux，是一种免费使用和自由传播的类UNIX操作系统，其内核由林纳斯·本纳第克特·托瓦兹于1991年10月5日首次发布，它主要受到Minix和Unix思想的启发，是一个基于POSIX和Unix的多用户、多任务、支..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://charlielyo.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://charlielyo.github.io/styles/main.css">
@@ -1003,11 +996,11 @@
         <div class="postshow postpadding" style="padding-bottom: 0;">
             
             <div class="postdetailimg">
-                <img src="https://charlielyo.github.io/post-images/about.jpg" class="postimage" style="cursor:auto">
+                <img src="https://charlielyo.github.io/post-images/centos-ji-ben-cao-zuo-1.png" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2019-01-25</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2021-02-05</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 5 min read</div>
                 <div class="posttag">
                     
                 </div>
@@ -1015,9 +1008,9 @@
             
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2 id="ptitle">关于</h2>
+                <h2 id="ptitle">CentOS基本操作（1）</h2>
                 <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://charlielyo.github.io/post/about/</div>
+                <div id="pl" style="display:none">https://charlielyo.github.io/post/centos-ji-ben-cao-zuo-1/</div>
                 <div id="rootaddr" style="display:none">https://charlielyo.github.io</div>
                 <span id="hotnum">
                     <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
@@ -1025,13 +1018,107 @@
                 </span>
             </div>
             <div class="text ">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                <p>Linux，全称GNU/Linux，是一种免费使用和自由传播的类UNIX操作系统，其内核由林纳斯·本纳第克特·托瓦兹于1991年10月5日首次发布，它主要受到Minix和Unix思想的启发，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它能运行主要的Unix工具软件、应用程序和网络协议。它支持32位和64位硬件。Linux继承了Unix以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。Linux有上百种不同的发行版，如基于社区开发的debian、archlinux，和基于商业开发的Red Hat Enterprise Linux、SUSE、CentOS、Oracle Linux等。</p>
+<p>Linux系统优点众多：</p>
+<p>Linux由众多微内核组成，其源代码完全开源；<br>
+Linux继承了Unix的特性，具有非常强大的网络功能，其支持所有的因特网协议，包括TCP/IPv4、TCP/IPv6和链路层拓扑程序等，且可以利用Unix的网络特性开发出新的协议栈；</p>
+<p>Linux系统工具链完整，简单操作就可以配置出合适的开发环境，可以简化开发过程，减少开发中仿真工具的障碍，使系统具有较强的移植性；</p>
+<p>CentOS（Community Enterprise Operating System）是Linux发行版之一，它是来自于Red Hat Enterprise Linux（RHEL）依照开放源代码规定发布的源代码所编译而成。由于出自同样的源代码，因此有些要求高度稳定性的服务器以CentOS替代商业版的Red Hat Enterprise Linux使用。</p>
+<p>本文讲解如何使用以CentOS为操作系统的基本操作。<br>
+<strong>基本操作篇</strong></p>
+<p>查看内核版本<br>
+<code>cat /proc/version</code></p>
+<p>Linux版本<br>
+<code>lsb_release -a</code></p>
+<p>CPU使用概览<br>
+<code>cat /proc/cpuinf</code></p>
+<p>位数概览<br>
+<code>getconf LONG_BIT</code><br>
+​<br>
+查看文件<br>
+<code>ls # 输出文件名称</code><br>
+<code>ls -l # 输出详细内容</code><br>
+<code>ls | grep o$ # 输出以o为结尾的所有文件</code></p>
+<p>跳转路径</p>
+<p>cd              # 由本路径跳转到根目录<br>
+cd ..           # 返回至上一级目录<br>
+cd foldername    #跳转至fileneame文件夹</p>
+<p>拷贝</p>
+<p>cp source_file destination  # 拷贝source_file到destination路径下<br>
+cp source_file ./           # 拷贝到当前目录下</p>
+<p>服务器远程拷贝</p>
+<h1 id="文件">文件</h1>
+<h1 id="从本地拷贝到服务器的某个目录下">从本地拷贝到服务器的某个目录下</h1>
+<p>scp url-to-source-filename username@server:url-to-destination-folder</p>
+<h1 id="从服务器拷贝到本地的路径下">从服务器拷贝到本地的路径下</h1>
+<p>scp username@server:url-to-source-filename url-to-destination-folder</p>
+<h1 id="文件夹">文件夹</h1>
+<h1 id="从本地拷贝到服务器的某个目录下-2">从本地拷贝到服务器的某个目录下</h1>
+<p>scp -r url-to-source-foldername username@server:url-to-destination-folder</p>
+<h1 id="从服务器拷贝到本地的路径下-2">从服务器拷贝到本地的路径下</h1>
+<p>scp -r username@server:url-to-source-foldername url-to-destination-folder<br>
+​</p>
+<p>1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
+9<br>
+10<br>
+11</p>
+<h1 id="文件-2">文件</h1>
+<h1 id="从本地拷贝到服务器的某个目录下-3">从本地拷贝到服务器的某个目录下</h1>
+<p>scp ./bella_file.txt bella@6.6.6.6:remote-folder</p>
+<h1 id="从服务器拷贝到本地的路径下-3">从服务器拷贝到本地的路径下</h1>
+<p>scp bella@6.6.6.6:remote-folder/bella_file.txt ./<br>
+​</p>
+<h1 id="文件夹-2">文件夹</h1>
+<h1 id="从本地拷贝到服务器的某个目录下-4">从本地拷贝到服务器的某个目录下</h1>
+<p>scp -r ./bella-folder bella@6.6.6.6:remote-folder</p>
+<h1 id="从服务器拷贝到本地的路径下-4">从服务器拷贝到本地的路径下</h1>
+<p>scp -r bella@6.6.6.6:remote-folder ./</p>
+<p>更改文件名／移动文件</p>
+<p>都是一样的命令：</p>
+<p>1<br>
+2<br>
+mv origin-filename changed-filename   # 改名<br>
+mv origin-filename folder/origin-filename   # 移入文件夹<br>
+​</p>
+<p>操作文件夹</p>
+<p>1<br>
+2<br>
+mkdir foldername		# 新建文件夹<br>
+rm -r foldername		# 移除文件夹</p>
+<p>操作文件</p>
+<p>1<br>
+2<br>
+vim filename 	# 编辑／新建文件，如果是新建，记得加后缀<br>
+rm filename 	# 移除文件</p>
+<p>一些文件小tricks<br>
+有时候一个文件很大，用vim或者其他软件打开都很大，看不过来。所以可以先用一些小技巧来进行查看：</p>
+<p>1<br>
+2<br>
+3<br>
+4<br>
+wc -l filename		# 查看文件共有几行<br>
+head -n filename 	# 从头查看到第n行，对于文件很大，打开一次很久的情况很好用<br>
+tail -n filename	# 从末尾查看到倒数第n行<br>
+vimdiff file1 file2 	# 便捷地比较两个文件的差异，会高亮出来</p>
+<p>离线跑程序<br>
+如果一个程序需要很长时间才能跑出来，而这时候一旦断网，连不上服务器，那么之前的努力就白费了。所以我们就需要一个离线也能进行的后台程序来负责长时间运行的程序。<br>
+nohup<br>
+意为：不挂断地运行命令。<br>
+比如我们原来的命令是：</p>
+<p>1<br>
+python3 main.py</p>
+<p>那么用nohup运行则写成：</p>
+<p>1<br>
+2<br>
+nohup python3 main.py &amp;	# 控制台输出文件默认为nohup.out<br>
+nohup python3 main.py &gt;result.txt &amp;  	# 重定向输出</p>
 
             </div>
             <hr style="width: 80%;">
@@ -1069,36 +1156,24 @@
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong></li>
-            <li><strong>原文链接：</strong>https://charlielyo.github.io/post/about/</li>
+            <li><strong>原文链接：</strong>https://charlielyo.github.io/post/centos-ji-ben-cao-zuo-1/</li>
             <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
                 许可协议。转载请注明出处！</li>
             </ul>
         </div>
         <div id="otherpost">
             
-            <a  data-pjax class="prev-post-pc" href="https://charlielyo.github.io/post/ce-shi/"  style="color: black;">
-                <div id="ppcontainer">
-                    
-                    <img src="https://charlielyo.github.io/post-images/ce-shi.jpg" style="width: 100%;" class="opimg">
-                    
-                    <h4 class="optitle">晚安，月亮</h4>
-                </div>
-            </a>
-            <div class="prev-post">
-                上一篇 <a  data-pjax href="https://charlielyo.github.io/post/ce-shi/">晚安，月亮</a>
-            </div>
             
-            
-            <a data-pjax class="next-post-pc" href="https://charlielyo.github.io/post/hello-gridea/"  style="color: black;">
+            <a data-pjax class="next-post-pc" href="https://charlielyo.github.io/post/shi-guang/"  style="color: black;">
                 <div id="npcontainer">
                     
-                    <img src="https://charlielyo.github.io/post-images/hello-gridea.png" style="width: 100%;" class="opimg">
+                    <img src="https://charlielyo.github.io/post-images/shi-guang.jpg" style="width: 100%;" class="opimg">
                     
-                    <h4 class="optitle">Hello Gridea</h4>
+                    <h4 class="optitle">时光</h4>
                 </div>
             </a>
             <div class="next-post">
-                下一篇 <a  data-pjax href="https://charlielyo.github.io/post/hello-gridea/">Hello Gridea</a>
+                下一篇 <a  data-pjax href="https://charlielyo.github.io/post/shi-guang/">时光</a>
             </div>
             
         </div>
@@ -1119,14 +1194,18 @@
 </script>
                     <div class="toc-container">
                         <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
+<li><a href="#%E6%96%87%E4%BB%B6">文件</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%AC%E5%9C%B0%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%9F%90%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B">从本地拷贝到服务器的某个目录下</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84%E8%B7%AF%E5%BE%84%E4%B8%8B">从服务器拷贝到本地的路径下</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%A4%B9">文件夹</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%AC%E5%9C%B0%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%9F%90%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B-2">从本地拷贝到服务器的某个目录下</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84%E8%B7%AF%E5%BE%84%E4%B8%8B-2">从服务器拷贝到本地的路径下</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6-2">文件</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%AC%E5%9C%B0%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%9F%90%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B-3">从本地拷贝到服务器的某个目录下</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84%E8%B7%AF%E5%BE%84%E4%B8%8B-3">从服务器拷贝到本地的路径下</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%A4%B9-2">文件夹</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%AC%E5%9C%B0%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%9F%90%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B-4">从本地拷贝到服务器的某个目录下</a></li>
+<li><a href="#%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84%E8%B7%AF%E5%BE%84%E4%B8%8B-4">从服务器拷贝到本地的路径下</a></li>
 </ul>
 
                     </div>
